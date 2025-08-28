@@ -1,0 +1,10 @@
+name: GH Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print text
+        run: echo "Hello, World!"
+      - name: Print second
+        run: echo "GH Action"
