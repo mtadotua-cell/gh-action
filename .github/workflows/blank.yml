@@ -4,9 +4,9 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print text
-        run: echo "Hello, World!"
-      - name: Print second
+      - name: Print info
         run: |
           echo "GH Action"
-          ls -la -R .
+          pwd
+          uname -a
+          env
